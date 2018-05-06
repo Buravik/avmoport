@@ -88,7 +88,7 @@ else
 		}
 	}
 }
-
+//role settings
 switch ($Action)
 {
 	case "view":
