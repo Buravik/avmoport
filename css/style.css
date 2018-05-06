@@ -1,0 +1,2406 @@
+.buttonFile{
+
+BORDER-RIGHT: #000000 1px solid;
+
+BORDER-TOP:  #000000 1px solid;
+
+BORDER-LEFT:  #000000 1px solid;
+
+BORDER-BOTTOM:  #000000 1px solid;
+
+FONT-SIZE: 12px;
+
+FONT-FAMILY: Arial;
+
+background-image : url(../images/bg_button.gif);
+
+height: 21px;
+
+text-align : left;
+
+font-weight : bold;
+
+}
+
+
+
+div.dvParams
+
+{
+
+display: none;
+
+align: center;
+
+}
+
+
+
+td.VertText
+
+{
+
+	writing-mode: tb-rl;
+
+}
+
+td.head {
+
+	background-color: #CC0000;
+
+	color: #FFFFFF;
+
+	text-align: center;
+
+	height: 22px;
+
+}
+
+
+
+td  {
+
+	font-size: 13px;
+
+	font-family: Arial;
+
+}
+
+
+
+.Littlerows  {
+
+	font-size: 10px;
+
+	font-family: Arial;
+
+}
+
+.Minirows  {
+
+	font-size: 8px;
+
+	font-family: Arial;
+
+}
+
+.Minirows9px  {
+
+	font-size: 9px;
+
+	font-family: Arial;
+
+}
+
+.LittleCaps  {
+
+	font-size: 11px;
+
+	font-family:Arial;
+
+}
+
+
+
+.LittleCaps1  {
+
+	font-size: 12px;
+
+	font-family:Arial;
+
+}
+
+.LittleCaps13  {
+
+	font-size: 13px;
+
+	font-family:Arial;
+
+}
+
+
+
+td.menuitem  {
+
+	font-size: 13px;
+
+	font-family: Arial;
+
+	font-weight: bold;
+
+}
+
+
+
+FORM {
+
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px;
+
+}
+
+
+
+BODY {
+
+	font-size: 13px;
+
+	font-family: Arial;
+
+}
+
+BODY.yellow {
+
+	font-size: 13px;
+
+	font-family: Arial;
+
+}
+
+
+
+BODY.green {
+
+	font-size: 13px;
+
+	font-family: Arial;
+
+	scrollbar-3dlight-color : #CEF5C8;
+
+	scrollbar-arrow-color : #028802;
+
+	scrollbar-base-color : #CEF5C8;
+
+	scrollbar-darkshadow-color : #CEF5C8;
+
+	scrollbar-face-color : #CEF5C8;
+
+	scrollbar-highlight-color : #028802;
+
+	scrollbar-shadow-color : #028802;
+
+	scrollbar-track-color : #CEF5C8;
+
+}
+
+
+
+BODY.silver {
+
+	font-size: 13px;
+
+	font-family: Arial;
+
+	scrollbar-3dlight-color : #E4E4DB;
+
+	scrollbar-arrow-color : #626244;
+
+	scrollbar-base-color : #E4E4DB;
+
+	scrollbar-darkshadow-color : #E4E4DB;
+
+	scrollbar-face-color : #E4E4DB;
+
+	scrollbar-highlight-color : #626244;
+
+	scrollbar-shadow-color : #626244;
+
+	scrollbar-track-color : #E4E4DB;
+
+}
+
+
+
+BODY.gold {
+
+	font-size: 13px;
+
+	font-family: Arial;
+
+	scrollbar-3dlight-color : #FBE6D0;
+
+	scrollbar-arrow-color : #CC3109;
+
+	scrollbar-base-color : #FBE6D0;
+
+	scrollbar-darkshadow-color : #FBE6D0;
+
+	scrollbar-face-color : #FBE6D0;
+
+	scrollbar-highlight-color : #CC3109;
+
+	scrollbar-shadow-color : #CC3109;
+
+	scrollbar-track-color : #FBE6D0;
+
+}
+
+BODY.blue {
+
+	font-size: 13px;
+
+	font-family: Arial;
+
+	scrollbar-3dlight-color : #C2D3F2;
+
+	scrollbar-arrow-color : #1E39AD;
+
+	scrollbar-base-color : #C2D3F2;
+
+	scrollbar-darkshadow-color : #C2D3F2;
+
+	scrollbar-face-color : #C2D3F2;
+
+	scrollbar-highlight-color : #1E39AD;
+
+	scrollbar-shadow-color : #1E39AD;
+
+	scrollbar-track-color : #C2D3F2;
+
+}
+
+
+
+
+
+.NavyCol {
+
+color: Navy;
+
+}
+
+
+
+.text_xx{ color: black; font-family: Arial, Helvetica, sans-serif; font-size: 9px }
+
+
+
+input.calendarbtn {
+
+	height: 20;
+
+}
+
+.TitleName {color: Navy; font-family:  Trebuchet MS, Arial, Helvetica, sans-serif; font-size: 14px;}
+
+.TitleName_yellow {color: Navy; background: Yellow; font-family:  Trebuchet MS, Arial, Helvetica, sans-serif; font-size: 14px;}
+
+.TitleName_fialet {color: Navy; background: #C4BDF0; font-family:  Trebuchet MS, Arial, Helvetica, sans-serif; font-size: 14px;}
+
+.TitleName_green {color: Navy; background: #00FF7F; font-family:  Trebuchet MS, Arial, Helvetica, sans-serif; font-size: 14px;}
+
+.TitleName_white {color: Navy; background: #ffffff; font-family:  Trebuchet MS, Arial, Helvetica, sans-serif; font-size: 14px;}
+
+.TitleNameRed {color: Red; font-family:  Trebuchet MS, Arial, Helvetica, sans-serif; font-size: 14px;}
+
+.TitlePhone {color: Red; font-family:  Trebuchet MS, Arial, Helvetica, sans-serif; font-size: 13px;}
+
+.TitleBlanc {color: Black; font-family:  Times, Arial, Helvetica, sans-serif; font-size: 18px;}
+
+.TitleBlanc1 {color: Black; font-family:  Times, Arial, Helvetica, sans-serif; font-size: 16px;}
+
+.TitleInvoice {color: Black; font-family:  Times, Arial, Helvetica, sans-serif; font-size: 18px;}
+
+.AbonBlanc {color: Black; font-family:  Times, Arial, Helvetica, sans-serif; font-size: 16px;}
+
+
+
+.DetailText {font-family: Verdana, Trebuchet MS,Times, Arial, Helvetica, sans-serif; font-size: 11px;}
+
+.DetailText1 {font-family: Verdana, Trebuchet MS,Times, Arial, Helvetica, sans-serif; font-size: 12px;}
+
+.DetailText2 {font-family: Arial; font-size: 12px;}
+
+.AlarmText {color: Red; font-family:  Trebuchet MS,Times, Arial, Helvetica, sans-serif; font-size: 13px;}
+
+.RedInput {
+
+height: 20px;
+
+background-color: #FFFFFF;
+
+BORDER-BOTTOM: 1px solid red;
+
+BORDER-LEFT: 1px solid red;
+
+BORDER-RIGHT: 1px solid red;
+
+BORDER-TOP: 1px solid red;
+
+}
+
+
+
+td.Invoice  {
+
+	font-size: 11px;
+
+	font-family: Times;
+
+}
+
+
+
+td.Lines  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 1px solid #808080;
+
+BORDER-RIGHT: #808080 1px solid;
+
+BORDER-TOP: 1px solid;
+
+BORDER-LEFT: 1px solid;
+
+height: 22px;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+td.Box  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 1px solid #AAA9A9;
+
+BORDER-RIGHT: #AAA9A9 1px solid;
+
+BORDER-TOP: 1px solid #AAA9A9;
+
+BORDER-LEFT: 1px solid #AAA9A9;
+
+height: 22px;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+td.BoxLTD  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 1px solid #000000;
+
+BORDER-RIGHT: 0px solid;
+
+BORDER-TOP: 1px solid #000000;
+
+BORDER-LEFT: 1px solid #000000;
+
+height: 22px;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+td.BoxLD  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 1px solid #000000;
+
+BORDER-RIGHT: 0px solid;
+
+BORDER-TOP: 0px solid;
+
+BORDER-LEFT: 1px solid #000000;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+td.BoxRTD  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 1px solid #000000;
+
+BORDER-RIGHT: 1px solid #000000;
+
+BORDER-TOP: 1px solid #000000;
+
+BORDER-LEFT: 0px solid;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+td.BoxRD  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 1px solid #000000;
+
+BORDER-RIGHT: 1px solid #000000;
+
+BORDER-TOP: 0px solid #000000;
+
+BORDER-LEFT: 0px solid;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+td.BoxLTD  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 1px solid #000000;
+
+BORDER-RIGHT: 0px solid #000000;
+
+BORDER-TOP: 1px solid #000000;
+
+BORDER-LEFT: 1px solid;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+td.BoxLRTD  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 1px solid #000000;
+
+BORDER-RIGHT: 1px solid #000000;
+
+BORDER-TOP: 1px solid #000000;
+
+BORDER-LEFT: 1px solid #000000;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+td.BoxLRTD01  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 0.1mm solid #000000;
+
+BORDER-RIGHT:  0.1mm solid #000000;
+
+BORDER-TOP:  0.1mm solid #000000;
+
+BORDER-LEFT:  0.1mm solid #000000;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+td.BoxLRT2D  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 1px solid #000000;
+
+BORDER-RIGHT: 1px solid #000000;
+
+BORDER-TOP: 2px solid #000000;
+
+BORDER-LEFT: 1px solid #000000;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+td.BoxD  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 1px solid #000000;
+
+BORDER-RIGHT: 0px solid #000000;
+
+BORDER-TOP: 0px solid #000000;
+
+BORDER-LEFT: 0px solid #000000;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+td.BoxD2  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 2px solid #000000;
+
+BORDER-RIGHT: 0px solid #000000;
+
+BORDER-TOP: 0px solid #000000;
+
+BORDER-LEFT: 0px solid #000000;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+td.BoxD_2  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 2px solid #000000;
+
+BORDER-RIGHT: 0px solid #000000;
+
+BORDER-TOP: 0px solid #000000;
+
+BORDER-LEFT: 0px solid #000000;
+
+font-family : Times;
+
+margin-top : 0;
+
+}
+
+td.BoxTD  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 1px solid #000000;
+
+BORDER-RIGHT: 0px solid #000000;
+
+BORDER-TOP: 1px solid #000000;
+
+BORDER-LEFT: 0px solid #000000;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+td.BoxT2D  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 1px solid #000000;
+
+BORDER-RIGHT: 0px solid #000000;
+
+BORDER-TOP: 2px solid #000000;
+
+BORDER-LEFT: 0px solid #000000;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+td.BoxL  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 0px solid #000000;
+
+BORDER-RIGHT: 0px solid #000000;
+
+BORDER-TOP: 0px solid #000000;
+
+BORDER-LEFT: 1px solid #000000;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+td.BoxR  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 0px solid #000000;
+
+BORDER-RIGHT: 1px solid #000000;
+
+BORDER-TOP: 0px solid #000000;
+
+BORDER-LEFT: 0px solid #000000;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+td.BoxR_Verdana  {
+
+font-size: 10px;
+
+BORDER-BOTTOM: 0px solid #000000;
+
+BORDER-RIGHT: 1px solid #000000;
+
+BORDER-TOP: 0px solid #000000;
+
+BORDER-LEFT: 0px solid #000000;
+
+font-family : Verdana;
+
+margin-top : 0;
+
+}
+
+
+
+td.BoxLT  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 0px solid #000000;
+
+BORDER-RIGHT: 0px solid #000000;
+
+BORDER-TOP: 1px solid #000000;
+
+BORDER-LEFT: 1px solid #000000;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+td.BoxRT  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 0px solid #000000;
+
+BORDER-RIGHT: 1px solid #000000;
+
+BORDER-TOP: 1px solid #000000;
+
+BORDER-LEFT: 0px solid #000000;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+td.BoxLTR  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 0px solid #000000;
+
+BORDER-RIGHT: 1px solid #000000;
+
+BORDER-TOP: 1px solid #000000;
+
+BORDER-LEFT: 1px solid #000000;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+td.BoxLDR  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 1px solid #000000;
+
+BORDER-RIGHT: 1px solid #000000;
+
+BORDER-TOP: 0px solid #000000;
+
+BORDER-LEFT: 1px solid #000000;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+td.BoxLR  {
+
+font-size: 11px;
+
+BORDER-BOTTOM: 0px solid #000000;
+
+BORDER-RIGHT: 1px solid #000000;
+
+BORDER-TOP: 0px solid #000000;
+
+BORDER-LEFT: 1px solid #000000;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+td.Box1  {
+
+BORDER-BOTTOM: 1px solid #AAA9A9;
+
+BORDER-RIGHT: #AAA9A9 1px solid;
+
+BORDER-TOP: 1px solid #AAA9A9;
+
+BORDER-LEFT: 1px solid #AAA9A9;
+
+margin-top : 0;
+
+}
+
+td.Box2  {
+
+BORDER-BOTTOM: 1px solid #AAA9A9;
+
+BORDER-RIGHT: #AAA9A9 1px solid;
+
+BORDER-TOP: 0px solid #AAA9A9;
+
+BORDER-LEFT: 0px solid #AAA9A9;
+
+margin-top : 0;
+
+font-family : Arial;
+
+font-size: 11px;
+
+}
+
+td.FreeSides  {
+
+BORDER-BOTTOM: 0px solid;
+
+BORDER-RIGHT: 0px solid;
+
+BORDER-TOP: 0px solid;
+
+BORDER-LEFT: 0px solid;
+
+margin-top : 0;
+
+font-family : Arial;
+
+font-size: 11px;
+
+}
+
+td.FreeSides1  {
+
+BORDER-BOTTOM: 0px solid;
+
+BORDER-RIGHT: 0px solid;
+
+BORDER-TOP: 0px solid;
+
+BORDER-LEFT: 0px solid;
+
+margin-top : 0;
+
+font-family : Arial;
+
+font-size: 12px;
+
+}
+
+td.BillHead  {
+
+	font-size: 11px;
+
+	font-family: Arial;
+
+	text-align: Center;
+
+}
+
+td.Contract  {
+
+	font-size: 12px;
+
+	font-family: Times;
+
+	text-align: justify;
+
+}
+
+td.ContractCenter  {
+
+	font-size: 12px;
+
+	font-family: Times;
+
+	text-align: center;
+
+}
+
+td.ContractRight  {
+
+	font-size: 12px;
+
+	font-family: Times;
+
+	text-align: right;
+
+}
+
+td.ContractLeft  {
+
+	font-size: 12px;
+
+	font-family: Times;
+
+	text-align: left;
+
+}
+
+
+
+td.Contract11  {
+
+	font-size: 11px;
+
+	font-family: Times;
+
+	text-align: justify;
+
+}
+
+td.ContractCenter11  {
+
+	font-size: 11px;
+
+	font-family: Times;
+
+	text-align: center;
+
+}
+
+td.ContractRight11  {
+
+	font-size: 11px;
+
+	font-family: Times;
+
+	text-align: right;
+
+}
+
+td.ContractLeft11  {
+
+	font-size: 11px;
+
+	font-family: Times;
+
+	text-align: left;
+
+}
+
+
+
+td.Contract15  {
+
+	font-size: 15px;
+
+	font-family: Times;
+
+	text-align: justify;
+
+}
+
+td.ContractCenter15  {
+
+	font-size: 15px;
+
+	font-family: Times;
+
+	text-align: center;
+
+}
+
+td.ContractRight15  {
+
+	font-size: 15px;
+
+	font-family: Times;
+
+	text-align: right;
+
+}
+
+td.ContractLeft15  {
+
+	font-size: 15px;
+
+	font-family: Times;
+
+	text-align: left;
+
+}
+
+
+
+td.Contract1  {
+
+	font-size: 11px;
+
+	font-family: Verdana,Arial;
+
+	text-align: justify;
+
+}
+
+td.ContractCenter1  {
+
+	font-size: 11px;
+
+	font-family: Verdana,Arial;
+
+	text-align: center;
+
+}
+
+td.ContractRight1  {
+
+	font-size: 11px;
+
+	font-family: Verdana,Arial;
+
+	text-align: right;
+
+}
+
+
+
+td.ContractLeft9v  {
+
+	font-size: 9px;
+
+	font-family: Verdana,Arial;
+
+	text-align: left;
+
+}
+
+td.Contract9v  {
+
+	font-size: 9px;
+
+	font-family: Verdana,Arial;
+
+	text-align: justify;
+
+}
+
+td.ContractCenter9v  {
+
+	font-size: 9px;
+
+	font-family: Verdana,Arial;
+
+	text-align: center;
+
+}
+
+td.ContractRight9v  {
+
+	font-size: 9px;
+
+	font-family: Verdana,Arial;
+
+	text-align: right;
+
+}
+
+
+
+td.Contract10v  {
+
+	font-size: 10px;
+
+	font-family: Verdana,Arial;
+
+	text-align: justify;
+
+}
+
+td.ContractCenter10v  {
+
+	font-size: 10px;
+
+	font-family: Verdana,Arial;
+
+	text-align: center;
+
+}
+
+td.ContractRight10v  {
+
+	font-size: 10px;
+
+	font-family: Verdana,Arial;
+
+	text-align: right;
+
+}
+
+
+
+td.Contract2  {
+
+	font-size: 12px;
+
+	font-family: Arial;
+
+	text-align: justify;
+
+}
+
+td.ContractCenter2  {
+
+	font-size: 12px;
+
+	font-family: Verdana;
+
+	text-align: center;
+
+}
+
+td.ContractRight2 {
+
+	font-size: 12px;
+
+	font-family: Arial;
+
+	text-align: right;
+
+}
+
+
+
+td.Contract10  {
+
+	font-size: 10px;
+
+	font-family: Times;
+
+	text-align: justify;
+
+}
+
+td.ContractCenter10  {
+
+	font-size: 10px;
+
+	font-family: Times;
+
+	text-align: center;
+
+}
+
+td.ContractRight10  {
+
+	font-size: 10px;
+
+	font-family: Times;
+
+	text-align: right;
+
+}
+
+
+
+td.Contract11  {
+
+	font-size: 11px;
+
+	font-family: Times;
+
+	text-align: justify;
+
+}
+
+td.ContractCenter11  {
+
+	font-size: 11px;
+
+	font-family: Times;
+
+	text-align: center;
+
+}
+
+td.ContractRight11  {
+
+	font-size: 11px;
+
+	font-family: Times;
+
+	text-align: right;
+
+}
+
+
+
+
+
+INPUT.flatPerfect {
+
+BORDER-BOTTOM: 1px solid #000000;
+
+BORDER-LEFT: #000000 1px solid;
+
+BORDER-RIGHT: #000000 1px solid;
+
+BORDER-TOP: #000000 1px solid;
+
+FONT-COLOR: #f0f8ff FONT-SIZE: 10pt;
+
+PADDING-BOTTOM: 2px;
+
+PADDING-LEFT: 2px;
+
+PADDING-RIGHT: 2px;
+
+PADDING-TOP: 2px;
+
+background-attachment : scroll;
+
+background-position : top;
+
+background-repeat : repeat-x;
+
+border-color : #000000;
+
+background-color : #ffffff;
+
+height: 22px;
+
+vertical-align : middle;
+
+font-family : Verdana;
+
+}
+
+
+
+INPUT.flatRecource {
+
+BORDER-BOTTOM: 0px solid #000000;
+
+BORDER-LEFT: #000000 0px solid;
+
+BORDER-RIGHT: #000000 0px solid;
+
+BORDER-TOP: #000000 0px solid;
+
+FONT-COLOR: #f0f8ff FONT-SIZE: 8pt;
+
+PADDING-BOTTOM:0px;
+
+PADDING-LEFT: 0px;
+
+PADDING-RIGHT: 0px;
+
+PADDING-TOP: 0px;
+
+background-attachment : scroll;
+
+background-position : top;
+
+background-repeat : repeat-x;
+
+border-color : #000000;
+
+background-color : #ffffff;
+
+height: 22px;
+
+vertical-align : middle;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+INPUT.soq{
+
+	BORDER-BOTTOM:0px solid #000000;
+
+	BORDER-LEFT: #000000 0px solid;
+
+	BORDER-RIGHT: #000000 0px solid;
+
+	BORDER-TOP: #000000 0px solid;
+
+	PADDING-BOTTOM:0px;
+
+	PADDING-LEFT: 0px;
+
+	PADDING-RIGHT: 0px;
+
+	PADDING-TOP: 0px;
+
+	background-attachment : scroll;
+
+	background-position : bottom;
+
+	background-repeat : repeat-x;
+
+	border-color : #999999;
+
+	background-color : White;
+
+	font : 9px;
+
+	text-align : center;
+
+	font-variant : small-caps;
+
+	padding : 0px 0px 0px 0px;
+
+	margin : 0px 0px 0px 0px;
+
+	float : none;
+
+	border : 0px;
+
+}
+
+
+
+INPUT.soq1{
+
+	BORDER-BOTTOM:0px solid #000000;
+
+	BORDER-LEFT: #000000 0px solid;
+
+	BORDER-RIGHT: #000000 0px solid;
+
+	BORDER-TOP: #000000 0px solid;
+
+	PADDING-BOTTOM:0px;
+
+	PADDING-LEFT: 0px;
+
+	PADDING-RIGHT: 0px;
+
+	PADDING-TOP: 0px;
+
+	background-attachment : scroll;
+
+	background-position : bottom;
+
+	background-repeat : repeat-x;
+
+	border-color : #999999;
+
+	background-color : White;
+
+	font : 10px;
+
+	text-align : center;
+
+	font-variant : small-caps;
+
+	padding : 0px 0px 0px 0px;
+
+	margin : 0px 0px 0px 0px;
+
+	float : none;
+
+	border : 0px;
+
+}
+
+
+
+.buttonPerfect_{
+
+BORDER-RIGHT: #000000 1px solid;
+
+BORDER-TOP:  #000000 1px solid;
+
+BORDER-LEFT:  #000000 1px solid;
+
+BORDER-BOTTOM:  #000000 1px solid;
+
+FONT-SIZE: 12px;
+
+FONT-FAMILY: Arial;
+
+background-image : url(../images/bg_button.gif);
+
+height: 21px;
+
+text-align : center;
+
+font-weight : bold;
+
+}
+
+.buttonPerfect_yellow{
+
+BORDER-RIGHT: #000000 1px solid;
+
+BORDER-TOP:  #000000 1px solid;
+
+BORDER-LEFT:  #000000 1px solid;
+
+BORDER-BOTTOM:  #000000 1px solid;
+
+FONT-SIZE: 12px;
+
+FONT-FAMILY: Arial;
+
+background-image : url(../images/bg_button.gif);
+
+height: 21px;
+
+text-align : center;
+
+font-weight : bold;
+
+}
+
+.buttonPerfect_gold{
+
+BORDER-RIGHT: #CC3109 1px solid;
+
+BORDER-TOP:  #CC3109 1px solid;
+
+BORDER-LEFT:  #CC3109 1px solid;
+
+BORDER-BOTTOM:  #CC3109 1px solid;
+
+FONT-SIZE: 12px;
+
+FONT-FAMILY: Arial;
+
+background-image : url(../images_gold/bg_button.gif);
+
+height: 21px;
+
+text-align : center;
+
+font-weight : bold;
+
+}
+
+
+
+.buttonPerfect_silver{
+
+BORDER-RIGHT: #626244 1px solid;
+
+BORDER-TOP:  #626244 1px solid;
+
+BORDER-LEFT:  #626244 1px solid;
+
+BORDER-BOTTOM:  #626244 1px solid;
+
+FONT-SIZE: 12px;
+
+FONT-FAMILY: Arial;
+
+background-image : url(../images_silver/bg_button.gif);
+
+height: 21px;
+
+text-align : center;
+
+font-weight : bold;
+
+}
+
+
+
+.buttonPerfect_blue{
+
+BORDER-RIGHT: #1E39AD 1px solid;
+
+BORDER-TOP:  #1E39AD 1px solid;
+
+BORDER-LEFT:  #1E39AD 1px solid;
+
+BORDER-BOTTOM:  #1E39AD 1px solid;
+
+FONT-SIZE: 12px;
+
+FONT-FAMILY: Arial;
+
+background-image : url(../images_blue/bg_button.gif);
+
+height: 21px;
+
+text-align : center;
+
+font-weight : bold;
+
+}
+
+
+
+.buttonPerfect_green{
+
+BORDER-RIGHT: #005600 1px solid;
+
+BORDER-TOP:  #005600 1px solid;
+
+BORDER-LEFT:  #005600 1px solid;
+
+BORDER-BOTTOM:  #005600 1px solid;
+
+FONT-SIZE: 12px;
+
+FONT-FAMILY: Arial;
+
+background-image : url(../images_green/bg_button.gif);
+
+height: 21px;
+
+text-align : center;
+
+font-weight : bold;
+
+}
+
+
+
+.buttonCalendar
+
+{
+
+BORDER-RIGHT: #000 0px solid;
+
+BORDER-TOP:  #000 0px solid;
+
+BORDER-LEFT:  #000 0px solid;
+
+BORDER-BOTTOM:  #000 0px solid;
+
+FONT-SIZE: 12px;
+
+FONT-FAMILY: Arial;
+
+background-image : url(../images/cal_button.gif);
+
+height: 20px;
+
+width: 20px;
+
+border-color : Black;
+
+text-align : center;
+
+font-weight : bold;
+
+}
+
+
+
+.buttonCalendar1
+
+{
+
+BORDER-RIGHT: #000 0px solid;
+
+BORDER-TOP:  #000 0px solid;
+
+BORDER-LEFT:  #000 0px solid;
+
+BORDER-BOTTOM:  #000 0px solid;
+
+FONT-SIZE: 12px;
+
+FONT-FAMILY: Arial;
+
+background-image : url(../images/cal_button1.gif);
+
+height: 20px;
+
+width: 20px;
+
+border-color : Black;
+
+text-align : center;
+
+font-weight : bold;
+
+}
+
+
+
+.buttonCalendar_silver
+
+{
+
+BORDER-RIGHT: #000 0px solid;
+
+BORDER-TOP:  #000 0px solid;
+
+BORDER-LEFT:  #000 0px solid;
+
+BORDER-BOTTOM:  #000 0px solid;
+
+FONT-SIZE: 12px;
+
+FONT-FAMILY: Arial;
+
+background-image : url(../images_silver/calendar.gif);
+
+height: 20px;
+
+width: 20px;
+
+text-align : center;
+
+font-weight : bold;
+
+}
+
+
+
+.buttonCalendar_yellow
+
+{
+
+BORDER-RIGHT: #000 0px solid;
+
+BORDER-TOP:  #000 0px solid;
+
+BORDER-LEFT:  #000 0px solid;
+
+BORDER-BOTTOM:  #000 0px solid;
+
+FONT-SIZE: 12px;
+
+FONT-FAMILY: Arial;
+
+background-image : url(../images_yellow/calendar.gif);
+
+height: 20px;
+
+width: 20px;
+
+text-align : center;
+
+font-weight : bold;
+
+}
+
+
+
+.buttonCalendar_gold
+
+{
+
+BORDER-RIGHT: #000 0px solid;
+
+BORDER-TOP:  #000 0px solid;
+
+BORDER-LEFT:  #000 0px solid;
+
+BORDER-BOTTOM:  #000 0px solid;
+
+FONT-SIZE: 12px;
+
+FONT-FAMILY: Arial;
+
+background-image : url(../images_gold/calendar.gif);
+
+height: 20px;
+
+width: 20px;
+
+text-align : center;
+
+font-weight : bold;
+
+}
+
+
+
+.buttonCalendar_blue
+
+{
+
+BORDER-RIGHT: #000 0px solid;
+
+BORDER-TOP:  #000 0px solid;
+
+BORDER-LEFT:  #000 0px solid;
+
+BORDER-BOTTOM:  #000 0px solid;
+
+FONT-SIZE: 12px;
+
+FONT-FAMILY: Arial;
+
+background-image : url(../images_blue/calendar.gif);
+
+height: 20px;
+
+width: 20px;
+
+text-align : center;
+
+font-weight : bold;
+
+}
+
+
+
+.buttonCalendar_green
+
+{
+
+BORDER-RIGHT: #000 0px solid;
+
+BORDER-TOP:  #000 0px solid;
+
+BORDER-LEFT:  #000 0px solid;
+
+BORDER-BOTTOM:  #000 0px solid;
+
+FONT-SIZE: 12px;
+
+FONT-FAMILY: Arial;
+
+background-image : url(../images_green/calendar.gif);
+
+height: 20px;
+
+width: 20px;
+
+text-align : center;
+
+font-weight : bold;
+
+}
+
+
+
+textarea {
+
+BORDER-BOTTOM: 1px solid;
+
+BORDER-LEFT: 1px solid;
+
+BORDER-RIGHT: 1px solid;
+
+BORDER-TOP: 1px solid;
+
+PADDING-BOTTOM:0px;
+
+PADDING-LEFT: 2px;
+
+PADDING-RIGHT: 0px;
+
+PADDING-TOP: 0px;
+
+border-color : #B4BABF;
+
+background-color : #FFFFFF;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+.Contract10v  {
+
+	font-size: 10px;
+
+	font-family: Verdana,Arial;
+
+	text-align: justify;
+
+}
+
+.ContractCenter10v  {
+
+	font-size: 10px;
+
+	font-family: Verdana,Arial;
+
+	text-align: center;
+
+}
+
+.ContractRight10v  {
+
+	font-size: 10px;
+
+	font-family: Verdana,Arial;
+
+	text-align: right;
+
+}
+
+
+
+.Contract9v  {
+
+	font-size: 9px;
+
+	font-family: Verdana,Arial;
+
+	text-align: justify;
+
+}
+
+.ContractCenter9v  {
+
+	font-size: 9px;
+
+	font-family: Verdana,Arial;
+
+	text-align: center;
+
+}
+
+.ContractRight9v  {
+
+	font-size: 9px;
+
+	font-family: Verdana,Arial;
+
+	text-align: right;
+
+}
+
+.ContractLeft9v  {
+
+	font-size: 9px;
+
+	font-family: Verdana,Arial;
+
+	text-align: left;
+
+}
+
+
+
+INPUT.flatDark_LightGray {
+
+BORDER-BOTTOM: 1px solid;
+
+BORDER-LEFT: 1px solid;
+
+BORDER-RIGHT: 1px solid;
+
+BORDER-TOP: 1px solid;
+
+PADDING-BOTTOM:0px;
+
+PADDING-LEFT: 2px;
+
+PADDING-RIGHT: 0px;
+
+PADDING-TOP: 0px;
+
+border-color : #B4BABF;
+
+background-color : #FFFFFF;
+
+height: 20px;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+INPUT.flat_yellow {
+
+BORDER-BOTTOM: 1px solid;
+
+BORDER-LEFT: 1px solid;
+
+BORDER-RIGHT: 1px solid;
+
+BORDER-TOP: 1px solid;
+
+PADDING-BOTTOM:0px;
+
+PADDING-LEFT: 2px;
+
+PADDING-RIGHT: 3px;
+
+PADDING-TOP: 0px;
+
+border-color : #B4BABF;
+
+background-color : #FFFFFF;
+
+height: 20px;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+INPUT.flat_gold {
+
+BORDER-BOTTOM: 1px solid;
+
+BORDER-LEFT: 1px solid;
+
+BORDER-RIGHT: 1px solid;
+
+BORDER-TOP: 1px solid;
+
+PADDING-BOTTOM:0px;
+
+PADDING-LEFT: 2px;
+
+PADDING-RIGHT: 3px;
+
+PADDING-TOP: 0px;
+
+border-color : #E97456;
+
+background-color : #FFFFFF;
+
+height: 20px;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+INPUT.flat_silver {
+
+BORDER-BOTTOM: 1px solid;
+
+BORDER-LEFT: 1px solid;
+
+BORDER-RIGHT: 1px solid;
+
+BORDER-TOP: 1px solid;
+
+PADDING-BOTTOM:0px;
+
+PADDING-LEFT: 2px;
+
+PADDING-RIGHT: 3px;
+
+PADDING-TOP: 0px;
+
+border-color : #9A9A7D;
+
+background-color : #FFFFFF;
+
+height: 20px;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+INPUT.flat_blue {
+
+BORDER-BOTTOM: 1px solid;
+
+BORDER-LEFT: 1px solid;
+
+BORDER-RIGHT: 1px solid;
+
+BORDER-TOP: 1px solid;
+
+PADDING-BOTTOM:0px;
+
+PADDING-LEFT: 2px;
+
+PADDING-RIGHT: 3px;
+
+PADDING-TOP: 0px;
+
+border-color : #8C9DE7;
+
+background-color : #FFFFFF;
+
+height: 20px;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+INPUT.flat_green {
+
+BORDER-BOTTOM: 1px solid;
+
+BORDER-LEFT: 1px solid;
+
+BORDER-RIGHT: 1px solid;
+
+BORDER-TOP: 1px solid;
+
+PADDING-BOTTOM:0px;
+
+PADDING-LEFT: 2px;
+
+PADDING-RIGHT: 3px;
+
+PADDING-TOP: 0px;
+
+border-color : #6DB96D;
+
+background-color : #FFFFFF;
+
+height: 20px;
+
+font-family : Arial;
+
+margin-top : 0;
+
+}
+
+
+
+/*----------------*/
+
+INPUT.flatDate_yellow {
+
+BORDER-BOTTOM: 1px solid;
+
+BORDER-LEFT: 1px solid;
+
+BORDER-RIGHT: 1px solid;
+
+BORDER-TOP: 1px solid;
+
+PADDING-BOTTOM:0px;
+
+PADDING-LEFT: 2px;
+
+PADDING-RIGHT: 0px;
+
+PADDING-TOP: 0px;
+
+border-color : #B4BABF;
+
+background-color : #FFFFFF;
+
+height: 20px;
+
+font-family : Arial;
+
+margin-top : 0;
+
+font-weight: Bold;
+
+}
+
+
+
+INPUT.flatDate_gold {
+
+BORDER-BOTTOM: 1px solid;
+
+BORDER-LEFT: 1px solid;
+
+BORDER-RIGHT: 1px solid;
+
+BORDER-TOP: 1px solid;
+
+PADDING-BOTTOM:0px;
+
+PADDING-LEFT: 2px;
+
+PADDING-RIGHT: 0px;
+
+PADDING-TOP: 0px;
+
+border-color : #E97456;
+
+background-color : #FFFFFF;
+
+height: 20px;
+
+font-family : Arial;
+
+margin-top : 0;
+
+font-weight: Bold;
+
+
+
+}
+
+
+
+INPUT.flatDate_silver {
+
+BORDER-BOTTOM: 1px solid;
+
+BORDER-LEFT: 1px solid;
+
+BORDER-RIGHT: 1px solid;
+
+BORDER-TOP: 1px solid;
+
+PADDING-BOTTOM:0px;
+
+PADDING-LEFT: 2px;
+
+PADDING-RIGHT: 0px;
+
+PADDING-TOP: 0px;
+
+border-color : #9A9A7D;
+
+background-color : #FFFFFF;
+
+height: 20px;
+
+font-family : Arial;
+
+margin-top : 0;
+
+font-weight: Bold;
+
+
+
+}
+
+
+
+INPUT.flatDate_blue {
+
+BORDER-BOTTOM: 1px solid;
+
+BORDER-LEFT: 1px solid;
+
+BORDER-RIGHT: 1px solid;
+
+BORDER-TOP: 1px solid;
+
+PADDING-BOTTOM:0px;
+
+PADDING-LEFT: 2px;
+
+PADDING-RIGHT: 0px;
+
+PADDING-TOP: 0px;
+
+border-color : #8C9DE7;
+
+background-color : #FFFFFF;
+
+height: 20px;
+
+font-family : Arial;
+
+margin-top : 0;
+
+font-weight: Bold;
+
+}
+
+
+
+INPUT.flatDate_green {
+
+BORDER-BOTTOM: 1px solid;
+
+BORDER-LEFT: 1px solid;
+
+BORDER-RIGHT: 1px solid;
+
+BORDER-TOP: 1px solid;
+
+PADDING-BOTTOM:0px;
+
+PADDING-LEFT: 2px;
+
+PADDING-RIGHT: 0px;
+
+PADDING-TOP: 0px;
+
+border-color : #6DB96D;
+
+background-color : #FFFFFF;
+
+height: 20px;
+
+font-family : Arial;
+
+margin-top : 0;
+
+font-weight: Bold;
+
+}
+
+
+
+/*----------------*/
+
+
+
+
+
+.button {
+
+	BORDER-RIGHT: #069 1px solid;
+
+	BORDER-TOP: #69c 1px solid;
+
+	BORDER-LEFT: #69c 1px solid;
+
+	BORDER-BOTTOM: #666 1px solid;
+
+	PADDING-RIGHT: 3px;
+
+	PADDING-LEFT: 3px;
+
+	FONT-SIZE: 11px;
+
+	FONT-FAMILY: Arial;
+
+	COLOR: #FFFFFF;
+
+	BACKGROUND-COLOR: #83ADCF;
+
+}
+
+
+
+A.menu {
+
+	text-decoration: none; color: Navy;
+
+}
+
+A.menu:hover {
+
+	text-decoration: underline; color: #CC0000;
+
+}
+
+
+A {
+	font-family: Helvetica,Trebuchet MS,Tahoma, Arial, Helvetica;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+
+A:hover {
+	font-family: Helvetica,Trebuchet MS,Tahoma, Arial, Helvetica;
+	font-size: 12px;
+	color: #3D3D3D;
+	text-decoration: underline;
+}
+
+A.maiclick {
+
+	text-decoration: none; color: #CC0000;
+
+}
+
+A.maiclick:hover {
+
+	text-decoration: underline; color: #CC0000;
+
+}
+
+BODY.login {
+
+	font-size: 13px;
+
+	font-family: Arial;
+
+	background: url(../images/mainbg.gif) center; 
+
+}
+
+.Enter {
+
+	color: #FAAB1A;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 15px;
+
+	font-weight: bold;
+
+	padding-top: 0px;
+
+	padding-right: 0px;
+
+	padding-bottom: 0px;
+
+	padding-left: 10px;	
+
+} 
+
+INPUT.EnterPage{
+
+	BORDER-BOTTOM: 1px solid #000000;
+
+	BORDER-LEFT: #000000 1px solid;
+
+	BORDER-RIGHT: #000000 1px solid;
+
+	BORDER-TOP: #000000 1px solid;
+
+	FONT-COLOR: #f0f8ff FONT-SIZE: 7pt;
+
+	PADDING-BOTTOM:0px;
+
+	PADDING-LEFT: 0px;
+
+	PADDING-RIGHT: 0px;
+
+	PADDING-TOP: 0px;
+
+	background-attachment : scroll;
+
+	background-position : top;
+
+	background-repeat : repeat-x;
+
+	border-color : #FAAB1A;
+
+	background-color : #F8E5B9;
+
+	height: 20px;
+
+	vertical-align : top;
+
+	font-family : Arial;
+
+	margin-top : 0;
+
+}
+
+tr.oddLine {
+	background: #ffffff;
+}
+tr.oddLine td {
+	font-family: Arial;
+	font-size: 12px;
+	height: 22px;
+	text-rendering: auto;
+	padding:2px;
+}
+tr.evenLine {
+	background: #F1F4F8;
+}
+
+tr.evenLine td {
+	font-family: Arial;
+	font-size: 12px;
+	height: 22px;
+	text-rendering: optimizeLegibility;
+	padding:2px;
+}
+
+td.TRBL
+{
+	border-top:1px solid #CCD8F0;
+	border-right:1px solid #CCD8F0;
+	border-bottom:1px solid #CCD8F0;
+	border-left:1px solid #CCD8F0;
+	background-color: #DEE8F6;
+	text-align:center;
+	
+} 
+td.TRB
+{
+	border-top:1px solid #CCD8F0;
+	border-right:1px solid #CCD8F0;
+	border-bottom:1px solid #CCD8F0;
+	background-color: #DEE8F6;
+	text-align:center;
+} 
+td.RBL
+{
+	border-right:1px solid #CCD8F0;
+	border-bottom:1px solid #CCD8F0;
+	border-left:1px solid #CCD8F0;
+	text-align:center;
+} 
+td.RB
+{
+	border-right:1px solid #CCD8F0;
+	border-bottom:1px solid #CCD8F0;
+	text-align:center;
+}
