@@ -11,12 +11,12 @@
 define('ARM_IN', true);
 include("includes/all_includes.php");
 
-$Action = isset($_GET['act']) ? $_GET['act'] : "view";
+$Action = isset($_GET['act']) ? $_GET['act'] : "rep1";
 $sDate = (isset($_POST['subdate'])) ? $_POST['subdate'] : date('d.m.Y');
 
 $sql->query('SELECT name'.$slang.' name, keyword from bcms_s_dictionary');
 $Dictionary = $sql->fetchAll();
-
+$Access	= $_SESSION['objects'];
 foreach ($Dictionary as $id => $value)
 {
 	$Dict[$value['keyword']] = $value['name'];
@@ -30,6 +30,59 @@ $smarty->assign(array(
 		'Access'			=> $_SESSION['objects'],
 		'Dict'				=> $Dict));
 
+
+print_r($Access);
+if (!isset($_GET['act']))
+{
+	if (isset($Access['hr']) && isset($Access['hrr']) && isset($Access['hrd']))
+	{
+		$Action = "rep1";
+	}	
+	elseif (!isset($Access['hr']) && isset($Access['hrr']) && isset($Access['hrd']))
+	{
+		$Action = "rep2";
+		$RegionId = $_SESSION['region_dep']; 
+	}
+	elseif (!isset($Access['hr']) && !isset($Access['hrr']) && isset($Access['hrd']))
+	{
+		$Action = "rep3";
+		$DCId = $_SESSION['distcity_dep'];
+ 	}
+}
+else
+{
+	if (isset($Access['hr']) && isset($Access['hrr']) && isset($Access['hrd']))
+	{
+		if ($Action == "rep2")
+		{
+			$RegionId = MyPiDeCrypt($_GET['rid']); 
+		}
+		if ($Action == "rep3")
+		{
+			$DCId = MyPiDeCrypt($_GET['dcid']); 
+		}
+	}	
+	elseif (!isset($Access['hr']) && isset($Access['hrr']) && isset($Access['hrd']))
+	{
+		if ($Action == "rep2")
+		{
+			$RegionId = $_SESSION['region_dep']; 
+		}
+		if ($Action == "rep3")
+		{
+			$DCId = MyPiDeCrypt($_GET['dcid']); 
+		}
+
+	}
+	elseif (!isset($Access['hr']) && !isset($Access['hrr']) && isset($Access['hrd']))
+	{
+		if ($Action == "rep3")
+		{
+			$DCId = MyPiDeCrypt($_GET['dcid']);
+		}
+	}
+}
+//role settings
 switch ($Action)
 {
 	case "rep1":
