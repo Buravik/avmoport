@@ -53,7 +53,7 @@ else
 	{
 		if ($Action == "rep2")
 		{
-			echo $RegionId = MyPiDeCrypt($_GET['rid']); 
+			$RegionId = MyPiDeCrypt($_GET['rid']); 
 		}
 		if ($Action == "rep3")
 		{
