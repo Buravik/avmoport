@@ -58,7 +58,7 @@
   <div class="headnamebox">
   <div class="headnames">Umimiy ma'lumot</div>
   </div>
- 
+{if $Action eq "rep1" || $Action eq "rep2"}
 <table align="center" border="0" width="100%" cellpadding="5" cellspacing="1" bgcolor="BCC7DD" id="studtable">
 		<tr class="titleth"> 
 			<td colspan="2">&nbsp;</td>
@@ -86,9 +86,9 @@
       	<tr bgcolor="{cycle values="#FFFFFF,#E4EAF2"}"> 
 			<td>{$key1}</td>	
 			{if $Action eq 'rep1'}
-			<td class="border-green"><a href="reports.php?act=rep2&rid={$key1}&mid=HssItt">{$Result1.0}</a></td>
+			<td class="border-green"><a href="reports.php?act=rep2&rid={$key1|crypt}&mid=HssItt">{$Result1.0}</a></td>
 			{else}
-			<td class="border-green"><a href="staff.php?act=schools&dcid={$key1|crypt}">{$Result1.0}</a></td>
+			<td class="border-green"><a href="reports.php?act=rep3&dcid={$key1|crypt}">{$Result1.0}</a></td>
 			{/if}
 			{foreach from=$SchoolTypes item=sType key=skey}
 				{assign var="stype" value=$sType.id}
@@ -132,14 +132,51 @@
 			<td align="center" class="scounts">{$TotalSchools}</td>
       		<td align="center" class="scounts">{$TotalStaff}</td>
       	</tr>
-	</table>
+</table>
+{else}
+<table align="center" border="0" width="100%" cellpadding="5" cellspacing="1" bgcolor="BCC7DD" id="studtable">
+      	<tr class="titleth"> 
+			<td align="center" width="30">#</td>
+			<td align="center" class="border-green">Ta'lim muassasasi</td>
+	      	{foreach from=$Positions item=Position key=pkey}
+		      	<th class="rotate"><div><span>{$Position.sname}</span></div></th>
+	      	{/foreach}
+	      	<th class="rotate  border-purple"><div><span>Umumiy</span></div></th>
+      	</tr>
+      	{assign var="TotalStaff" value=0}	
+      	{foreach from=$Schools item=School key=key1}
+      	<tr bgcolor="{cycle values="#FFFFFF,#E4EAF2"}"> 
+			<td>{$key1+1}</td>	
+			<td class="border-green"><a href="staff.php?act=staff&did={$School.id|crypt}" class="names faculties">{$School.school_number}-{$School.stype}</a></td>
+				{assign var="school" value=$School.id}
+		      	{foreach from=$Positions item=Position key=pkey}
+					{assign var="ptype" value=$Position.id}
+			      	<td class="scounts">
+			      		{$StaffCounts.$school.$ptype}
+			      	</td>
+		      	{/foreach}
+		      	<td class="scounts black border-purple">
+		      		{$School.scount}
+		      	</td>
+		      	{assign var="TotalStaff" value=$TotalStaff+$School.scount}	
+      	</tr>
+
+      	{/foreach}
+      	<tr class="titleth"> 
+			<td align="center" colspan="2" class="scounts black border-green">Jami:</td>
+				{assign var="stype" value=$sType.id}
+		      	{foreach from=$Positions item=Position key=pkey}
+					{assign var="ptype" value=$Position.id}
+			      	<td class="scounts">
+			      		{$TotalByPositions.$ptype}
+			      	</td>
+		      	{/foreach}
+      		<td align="center" class="scounts border-purple">{$TotalStaff}</td>
+      	</tr>
+</table>
+{/if}
 <br>
-		<table align="center" border="0">
-		{foreach from=$Marks key=key item=Mark}
-		{assign var=themark value=$Mark.mark}
-		<tr><td>«{$Mark.name}»</td><td>__<u>{$MarkCalc.$themark}</u>__</td></tr>
-		{/foreach}
-	</table>
+		
 		
 	</div>
 	<script>

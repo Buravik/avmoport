@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.5-dev, created on 2018-04-29 20:06:26
+<?php /* Smarty version 2.6.5-dev, created on 2018-05-07 23:04:48
          compiled from reports.tpl */ ?>
 <?php require_once(SMARTY_DIR . 'core' . DIRECTORY_SEPARATOR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'cycle', 'reports.tpl', 86, false),array('modifier', 'crypt', 'reports.tpl', 91, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'cycle', 'reports.tpl', 86, false),array('modifier', 'crypt', 'reports.tpl', 89, false),)), $this); ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "base.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;
@@ -94,7 +94,7 @@ unset($_smarty_tpl_vars);
   <div class="headnamebox">
   <div class="headnames">Umimiy ma'lumot</div>
   </div>
- 
+<?php if ($this->_tpl_vars['Action'] == 'rep1' || $this->_tpl_vars['Action'] == 'rep2'): ?>
 <table align="center" border="0" width="100%" cellpadding="5" cellspacing="1" bgcolor="BCC7DD" id="studtable">
 		<tr class="titleth"> 
 			<td colspan="2">&nbsp;</td>
@@ -134,11 +134,11 @@ unset($_smarty_tpl_vars);
 			<td><?php echo $this->_tpl_vars['key1']; ?>
 </td>	
 			<?php if ($this->_tpl_vars['Action'] == 'rep1'): ?>
-			<td class="border-green"><a href="reports.php?act=rep2&rid=<?php echo $this->_tpl_vars['key1']; ?>
+			<td class="border-green"><a href="reports.php?act=rep2&rid=<?php echo ((is_array($_tmp=$this->_tpl_vars['key1'])) ? $this->_run_mod_handler('crypt', true, $_tmp) : smarty_modifier_crypt($_tmp)); ?>
 &mid=HssItt"><?php echo $this->_tpl_vars['Result1']['0']; ?>
 </a></td>
 			<?php else: ?>
-			<td class="border-green"><a href="staff.php?act=schools&dcid=<?php echo ((is_array($_tmp=$this->_tpl_vars['key1'])) ? $this->_run_mod_handler('crypt', true, $_tmp) : smarty_modifier_crypt($_tmp)); ?>
+			<td class="border-green"><a href="reports.php?act=rep3&dcid=<?php echo ((is_array($_tmp=$this->_tpl_vars['key1'])) ? $this->_run_mod_handler('crypt', true, $_tmp) : smarty_modifier_crypt($_tmp)); ?>
 "><?php echo $this->_tpl_vars['Result1']['0']; ?>
 </a></td>
 			<?php endif; ?>
@@ -202,18 +202,69 @@ unset($_smarty_tpl_vars);
       		<td align="center" class="scounts"><?php echo $this->_tpl_vars['TotalStaff']; ?>
 </td>
       	</tr>
-	</table>
-<br>
-		<table align="center" border="0">
-		<?php if (count($_from = (array)$this->_tpl_vars['Marks'])):
-    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['Mark']):
+</table>
+<?php else: ?>
+<table align="center" border="0" width="100%" cellpadding="5" cellspacing="1" bgcolor="BCC7DD" id="studtable">
+      	<tr class="titleth"> 
+			<td align="center" width="30">#</td>
+			<td align="center" class="border-green">Ta'lim muassasasi</td>
+	      	<?php if (count($_from = (array)$this->_tpl_vars['Positions'])):
+    foreach ($_from as $this->_tpl_vars['pkey'] => $this->_tpl_vars['Position']):
 ?>
-		<?php $this->assign('themark', $this->_tpl_vars['Mark']['mark']); ?>
-		<tr><td>«<?php echo $this->_tpl_vars['Mark']['name']; ?>
-»</td><td>__<u><?php echo $this->_tpl_vars['MarkCalc'][$this->_tpl_vars['themark']]; ?>
-</u>__</td></tr>
-		<?php endforeach; unset($_from); endif; ?>
-	</table>
+		      	<th class="rotate"><div><span><?php echo $this->_tpl_vars['Position']['sname']; ?>
+</span></div></th>
+	      	<?php endforeach; unset($_from); endif; ?>
+	      	<th class="rotate  border-purple"><div><span>Umumiy</span></div></th>
+      	</tr>
+      	<?php $this->assign('TotalStaff', 0); ?>	
+      	<?php if (count($_from = (array)$this->_tpl_vars['Schools'])):
+    foreach ($_from as $this->_tpl_vars['key1'] => $this->_tpl_vars['School']):
+?>
+      	<tr bgcolor="<?php echo smarty_function_cycle(array('values' => "#FFFFFF,#E4EAF2"), $this);?>
+"> 
+			<td><?php echo $this->_tpl_vars['key1']+1; ?>
+</td>	
+			<td class="border-green"><a href="staff.php?act=staff&did=<?php echo ((is_array($_tmp=$this->_tpl_vars['School']['id'])) ? $this->_run_mod_handler('crypt', true, $_tmp) : smarty_modifier_crypt($_tmp)); ?>
+" class="names faculties"><?php echo $this->_tpl_vars['School']['school_number']; ?>
+-<?php echo $this->_tpl_vars['School']['stype']; ?>
+</a></td>
+				<?php $this->assign('school', $this->_tpl_vars['School']['id']); ?>
+		      	<?php if (count($_from = (array)$this->_tpl_vars['Positions'])):
+    foreach ($_from as $this->_tpl_vars['pkey'] => $this->_tpl_vars['Position']):
+?>
+					<?php $this->assign('ptype', $this->_tpl_vars['Position']['id']); ?>
+			      	<td class="scounts">
+			      		<?php echo $this->_tpl_vars['StaffCounts'][$this->_tpl_vars['school']][$this->_tpl_vars['ptype']]; ?>
+
+			      	</td>
+		      	<?php endforeach; unset($_from); endif; ?>
+		      	<td class="scounts black border-purple">
+		      		<?php echo $this->_tpl_vars['School']['scount']; ?>
+
+		      	</td>
+		      	<?php $this->assign('TotalStaff', $this->_tpl_vars['TotalStaff']+$this->_tpl_vars['School']['scount']); ?>	
+      	</tr>
+
+      	<?php endforeach; unset($_from); endif; ?>
+      	<tr class="titleth"> 
+			<td align="center" colspan="2" class="scounts black border-green">Jami:</td>
+				<?php $this->assign('stype', $this->_tpl_vars['sType']['id']); ?>
+		      	<?php if (count($_from = (array)$this->_tpl_vars['Positions'])):
+    foreach ($_from as $this->_tpl_vars['pkey'] => $this->_tpl_vars['Position']):
+?>
+					<?php $this->assign('ptype', $this->_tpl_vars['Position']['id']); ?>
+			      	<td class="scounts">
+			      		<?php echo $this->_tpl_vars['TotalByPositions'][$this->_tpl_vars['ptype']]; ?>
+
+			      	</td>
+		      	<?php endforeach; unset($_from); endif; ?>
+      		<td align="center" class="scounts border-purple"><?php echo $this->_tpl_vars['TotalStaff']; ?>
+</td>
+      	</tr>
+</table>
+<?php endif; ?>
+<br>
+		
 		
 	</div>
 	<script>

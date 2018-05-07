@@ -26,12 +26,10 @@ foreach ($Dictionary as $id => $value)
 $smarty->assign(array(
 		'PageIcon'		=> "groups.png",
 		'PageTitle'		=> $Dict['reports'],
-		'Action'			=> $Action,
 		'Access'			=> $_SESSION['objects'],
 		'Dict'				=> $Dict));
 
 
-print_r($Access);
 if (!isset($_GET['act']))
 {
 	if (isset($Access['hr']) && isset($Access['hrr']) && isset($Access['hrd']))
@@ -55,7 +53,7 @@ else
 	{
 		if ($Action == "rep2")
 		{
-			$RegionId = MyPiDeCrypt($_GET['rid']); 
+			echo $RegionId = MyPiDeCrypt($_GET['rid']); 
 		}
 		if ($Action == "rep3")
 		{
@@ -178,12 +176,11 @@ switch ($Action)
 		
 $smarty->assign(array(
 		'PageIcon'		=> "groups.png",
+		'Action'		=> $Action,
 		));
-		
 break;
 
 case "rep2":
-	$RegionId = (isset($_GET['rid'])) ? $_GET['rid'] : 1;
 	$query = "SELECT r.`name1` regionname, s.`distcity` region, COUNT(*) scount ,
 			(SELECT COUNT(*) FROM port_schools ps WHERE ps.distcity = s.distcity) school_count
 			FROM port_staff t
@@ -287,6 +284,59 @@ $smarty->assign(array(
 		
 break;
 	
+case "rep3":
+	$query = "				
+SELECT t.id, t.school_number, t.school_name, st.name3 stype,
+					(SELECT COUNT(*) FROM port_staff WHERE work_place_edu = 0 AND work_place_school = t.id) scount 
+					FROM port_schools t 
+					LEFT JOIN `port_s_school_types` st ON st.id = t.school_type
+					WHERE t.`distcity`= {$DCId}";
+				
+	$sql->query($query);
+	$Schools = $sql->fetchAll();
+
+	$query = "SELECT s.`id` school_id, t.`position`, COUNT(*) scount FROM port_staff t
+			LEFT JOIN port_schools s ON s.`id` = t.`work_place_school`
+			WHERE s.`distcity`= {$DCId}
+			GROUP BY s.`id`, t.`position` ";
+
+	$sql->query($query);
+	$StaffByPosition = $sql->fetchAll();
+
+	foreach ($StaffByPosition as $skey => $sCounts) {
+		$StaffCounts[$sCounts['school_id']][$sCounts['position']]	= $sCounts['scount'];
+	}	
+
+	$query = "SELECT id, short_name sname FROM `test_s_positions`";
+	$sql->query($query);
+	$Positions = $sql->fetchAll();
+
+	$query = "SELECT s.`id`, t.`position`, COUNT(*) scount FROM port_staff t
+			LEFT JOIN port_schools s ON s.`id` = t.`work_place_school`
+			WHERE s.`distcity`= {$DCId}
+			GROUP BY t.`position`";
+	$sql->query($query);
+	$TotalResult = $sql->fetchAll();
+
+	foreach ($TotalResult as $skey => $tCounts) {
+		$TotalByPositions[$tCounts['position']]	= $tCounts['scount'];
+	}	
+	
+  	$smarty->assign(array(
+	'Schools'	=> $Schools,
+	'StaffCounts'	=> $StaffCounts,
+	'TotalByPositions'	=> $TotalByPositions,
+	'Positions'		=> $Positions,
+	'isDate'		=> 1,
+	));
+$smarty->assign(array(
+		'PageIcon'		=> "groups.png",
+		'Action'		=> $Action,
+		));
+		
+break;
+	
 }
+
 $smarty->display("reports.tpl");
 ?>
