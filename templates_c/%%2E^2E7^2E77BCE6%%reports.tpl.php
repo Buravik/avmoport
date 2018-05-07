@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.5-dev, created on 2018-05-07 23:04:48
+<?php /* Smarty version 2.6.5-dev, created on 2018-05-07 23:16:06
          compiled from reports.tpl */ ?>
 <?php require_once(SMARTY_DIR . 'core' . DIRECTORY_SEPARATOR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'cycle', 'reports.tpl', 86, false),array('modifier', 'crypt', 'reports.tpl', 89, false),)), $this); ?>
@@ -92,7 +92,7 @@ unset($_smarty_tpl_vars);
 	<div id="printarea">
 
   <div class="headnamebox">
-  <div class="headnames">Umimiy ma'lumot</div>
+  <div class="headnames">Maktablar ma'lumoti</div>
   </div>
 <?php if ($this->_tpl_vars['Action'] == 'rep1' || $this->_tpl_vars['Action'] == 'rep2'): ?>
 <table align="center" border="0" width="100%" cellpadding="5" cellspacing="1" bgcolor="BCC7DD" id="studtable">

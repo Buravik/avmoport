@@ -56,7 +56,7 @@
 	<div id="printarea">
 
   <div class="headnamebox">
-  <div class="headnames">Umimiy ma'lumot</div>
+  <div class="headnames">Maktablar ma'lumoti</div>
   </div>
 {if $Action eq "rep1" || $Action eq "rep2"}
 <table align="center" border="0" width="100%" cellpadding="5" cellspacing="1" bgcolor="BCC7DD" id="studtable">
